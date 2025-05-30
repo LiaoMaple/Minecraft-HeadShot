@@ -172,7 +172,7 @@
       container.innerHTML = "🔍 查詢中...";
       try {
         const uuid = await fetchUUID(name);
-        const bodyUrl = `https://crafatar.com/renders/body/${uuid}?size=512&overlay`;
+        const bodyUrl = `https://crafatar.com/renders/body/${uuid}?size=256&overlay`;
         container.innerHTML = `<h2>${name} 的全身皮膚</h2><img src="${bodyUrl}" alt="全身皮膚載入失敗" />`;
       } catch {
         container.innerHTML = `<p>❌ 找不到玩家 "${name}"，請確認 ID 是否正確！</p>`;
